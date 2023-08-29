@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  resod_pg:
+    image: postgres:latest
+    container_name: cat_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: cat
+      POSTGRES_USER: cat
+      POSTGRES_PASSWORD: cat
+    ports:
+      - 5432:5432
