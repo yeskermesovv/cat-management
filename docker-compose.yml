@@ -1,6 +1,6 @@
 version: '3.7'
 services:
-  resod_pg:
+  cat_pg:
     image: postgres:latest
     container_name: cat_db
     restart: unless-stopped

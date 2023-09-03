@@ -1,0 +1,17 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+   http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet author="Serik" id="1">
+        <sqlFile path="classpath:/db/create_cat_table.sql" relativeToChangelogFile="false" splitStatements="true"/>
+    </changeSet>
+
+    <changeSet author="Serik" id="2">
+        <sqlFile path="classpath:/db/fill_cat_table.sql" relativeToChangelogFile="false" splitStatements="true"/>
+    </changeSet>
+</databaseChangeLog>
